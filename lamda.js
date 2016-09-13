@@ -1,6 +1,7 @@
 var AWS = require('aws-sdk')
 var dd = new AWS.DynamoDB();
 var tableName = 'test'
+
 exports.handler = (event, context) => {
     
     function parseBucketName( record ){
